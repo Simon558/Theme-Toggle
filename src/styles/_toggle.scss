@@ -1,0 +1,39 @@
+.toggle{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        column-gap: 2.5rem;
+    }
+
+    &__text{
+        color: $dark;
+        font-size: 1.7rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+
+        &--light{
+            font-weight: 600;
+        }
+    }
+
+    &__btn{
+        width: 10rem;
+        height: 4.375rem;
+        border-radius: 3rem;
+        background: $cyanLight;
+        display: flex;
+        align-items: center;
+
+        &__circle{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 3rem;
+            background-color: $white;
+            margin-left: 0.6875rem;
+            cursor: pointer;
+        }
+    }
+}
