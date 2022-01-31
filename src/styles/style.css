@@ -26,6 +26,9 @@ body {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  50% {
+    width: 4rem;
+  }
   to {
     -webkit-transform: translateX(90px);
             transform: translateX(90px);
@@ -36,6 +39,9 @@ body {
   from {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  50% {
+    width: 4rem;
   }
   to {
     -webkit-transform: translateX(90px);
@@ -48,6 +54,9 @@ body {
     -webkit-transform: translateX(90px);
             transform: translateX(90px);
   }
+  50% {
+    width: 4rem;
+  }
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -58,6 +67,9 @@ body {
   from {
     -webkit-transform: translateX(90px);
             transform: translateX(90px);
+  }
+  50% {
+    width: 4rem;
   }
   to {
     -webkit-transform: translateX(0);

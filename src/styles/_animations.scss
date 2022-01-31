@@ -3,6 +3,10 @@
         transform: translateX(0);
     }
 
+    50%{
+        width: 4rem;
+    }
+
     to{
         transform: translateX(90px);
     }
@@ -13,6 +17,10 @@
         transform: translateX(90px);
     }
 
+    50%{
+        width: 4rem;
+    }
+  
     to{
         transform: translateX(0);
     }
