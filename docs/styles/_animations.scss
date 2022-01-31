@@ -1,0 +1,27 @@
+@keyframes slide-left-to-right{
+    from{
+        transform: translateX(0);
+    }
+
+    50%{
+        width: 4rem;
+    }
+
+    to{
+        transform: translateX(90px);
+    }
+}
+
+@keyframes slide-right-to-left{
+    from{
+        transform: translateX(90px);
+    }
+
+    50%{
+        width: 4rem;
+    }
+  
+    to{
+        transform: translateX(0);
+    }
+}

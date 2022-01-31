@@ -1,0 +1,63 @@
+.toggle{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        column-gap: 2.5rem;
+
+        &--dark{
+            background-color: $dark;
+        }
+    }
+
+    &__text{
+        color: $dark;
+        font-size: 1.7rem;
+        font-weight: 400;
+        letter-spacing: 0.03rem;
+
+        &--bold{
+            font-weight: 600;
+        }
+
+        &--dark{
+            color: $white;
+        }
+    }
+
+    &__btn{
+        width: 10rem;
+        height: 4.375rem;
+        border-radius: 3rem;
+        background-color: $cyanLight;
+        display: flex;
+        align-items: center;
+
+        &--dark{
+            background-color: $cyanDark;
+        }
+
+        &__circle{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 3rem;
+            background-color: $white;
+            margin-left: 0.6875rem;
+            cursor: pointer;
+
+            &--light{
+                animation-name: slide-right-to-left;
+                animation-duration: 500ms;
+                animation-fill-mode: forwards;   
+            }
+
+            &--dark{
+                animation-name: slide-left-to-right;
+                animation-duration: 500ms;
+                animation-fill-mode: forwards;   
+            }
+        }
+    }
+}
