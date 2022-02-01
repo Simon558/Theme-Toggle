@@ -77,6 +77,61 @@ body {
   }
 }
 
+@media (max-width: 36rem) {
+  @-webkit-keyframes slide-left-to-right {
+    from {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    50% {
+      width: 3rem;
+    }
+    to {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+  }
+  @keyframes slide-left-to-right {
+    from {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    50% {
+      width: 3rem;
+    }
+    to {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+  }
+  @-webkit-keyframes slide-right-to-left {
+    from {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    50% {
+      width: 3rem;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slide-right-to-left {
+    from {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    50% {
+      width: 3rem;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+}
+
 .toggle__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +151,13 @@ body {
           column-gap: 2.5rem;
 }
 
+@media (max-width: 36rem) {
+  .toggle__container {
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+}
+
 .toggle__container--dark {
   background-color: #262626;
 }
@@ -105,6 +167,12 @@ body {
   font-size: 1.7rem;
   font-weight: 400;
   letter-spacing: 0.03rem;
+}
+
+@media (max-width: 36rem) {
+  .toggle__text {
+    font-size: 1.4rem;
+  }
 }
 
 .toggle__text--bold {
@@ -128,6 +196,13 @@ body {
           align-items: center;
 }
 
+@media (max-width: 36rem) {
+  .toggle__btn {
+    width: 7rem;
+    height: 3.5rem;
+  }
+}
+
 .toggle__btn--dark {
   background-color: #20b4a2;
 }
@@ -139,6 +214,13 @@ body {
   background-color: #ffffff;
   margin-left: 0.6875rem;
   cursor: pointer;
+}
+
+@media (max-width: 36rem) {
+  .toggle__btn__circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .toggle__btn__circle--light {

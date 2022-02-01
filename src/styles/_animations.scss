@@ -25,3 +25,33 @@
         transform: translateX(0);
     }
 }
+
+@include breakpointMax(sm){
+    @keyframes slide-left-to-right{
+        from{
+            transform: translateX(0);
+        }
+    
+        50%{
+            width: 3rem;
+        }
+    
+        to{
+            transform: translateX(50px);
+        }
+    }
+
+    @keyframes slide-right-to-left{
+        from{
+            transform: translateX(50px);
+        }
+    
+        50%{
+            width: 3rem;
+        }
+      
+        to{
+            transform: translateX(0);
+        }
+    }
+}
